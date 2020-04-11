@@ -9,6 +9,8 @@ import {
   MessageInput,
 } from "stream-chat-expo";
 
+
+
 const chatClient = new StreamChat('zcb7grvq5fqj');
 const userToken =
     'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZGFyay13aW5kLTMifQ.CdtwgaJPvLkQ0e5xfydbXluiYGR5s_Jf3hLCHh4Zbzc';
