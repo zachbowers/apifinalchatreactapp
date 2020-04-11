@@ -1,7 +1,8 @@
 
 import React from "react";
-import { View, SafeAreaView } from "react-native";
+
 import { StreamChat } from "stream-chat";
+import  { View, SafeAreaView } from "react-native";
 import {
   Chat,
   Channel,
