@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import { View, SafeAreaView } from "react-native";
+import { StreamChat } from "stream-chat";
+import {
+  Chat,
+  Channel,
+  MessageList,
+  MessageInput,
+} from "stream-chat-expo";
+
+const chatClient = new StreamChat('zcb7grvq5fqj');
+const userToken =
+    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZGFyay13aW5kLTMifQ.CdtwgaJPvLkQ0e5xfydbXluiYGR5s_Jf3hLCHh4Zbzc';
+
+const user = {
+  id: 'dark-wind-3',
+  name: 'Dark wind',
+  image:
+      'https://stepupandlive.files.wordpress.com/2014/09/3d-animated-frog-image.jpg',
+};
+
+chatClient.setUser(user, userToken);
+
+class ChannelScreen extends React.Component {
+  render() {
+    const channel = chatClient.channel("messaging", "dark-wind-3");
+    channel.watch();
+
+    return (
+        <SafeAreaView>
+          <Chat client={chatClient}>
+            <Channel channel={channel}>
+              <View style={{ display: "flex", height: "100%" }}>
+                <MessageList />
+                <MessageInput />
+              </View>
+            </Channel>
+          </Chat>
+        </SafeAreaView>
+    );
+  }
 }
 
-export default App;
+export default class App extends React.Component {
+  render() {
+    return <ChannelScreen />;
+  }
+}
