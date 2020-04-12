@@ -18,7 +18,7 @@ chatClient.setUser(
     userToken,
 );
 
-const channel = chatClient.channel('livestream', 'spacex', {
+const channel = chatClient.channel('livestream', 'webapi', {
   image: 'https://goo.gl/Zefkbx',
   name: 'OurGlass',
 });
