@@ -19,7 +19,7 @@ chatClient.setUser(
 );
 
 const channel = chatClient.channel('livestream', 'webapi', {
-  image: 'https://goo.gl/Zefkbx',
+  image: 'https://slack-files.com/TUESA3D8C-F0106K3NP4K-76f0878eea',
   name: 'OurGlass',
 });
 
