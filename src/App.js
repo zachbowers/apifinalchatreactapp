@@ -2,7 +2,7 @@
 import React from "react";
 
 import { StreamChat } from "stream-chat";
-//import  { View, SafeAreaView } from "react-native";
+import  { View, SafeAreaView } from "react-native";
 import {
   Chat,
   Channel,
