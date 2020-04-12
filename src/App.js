@@ -1,52 +1,39 @@
+import React from 'react';
+import { Chat, Channel, ChannelHeader, Window } from 'stream-chat-react';
+import { MessageList, MessageInput, MessageLivestream } from 'stream-chat-react';
+import { MessageInputSmall, Thread } from 'stream-chat-react';
+import { StreamChat } from 'stream-chat';
 
-import React from "react";
+import 'stream-chat-react/dist/css/index.css';
 
-import { StreamChat } from "stream-chat";
-//import  { View, SafeAreaView } from "react-native";
-import {
-  Chat,
-  Channel,
-  MessageList,
-  MessageInput,
-} from "stream-chat-expo";
+const chatClient = new StreamChat('exchr7a3dmm3');
+const userToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZ2VudGxlLW1vZGUtMSJ9.b7UgvP5lSAIaW5War906oqruJmhwsYIMS0qlTqGfVr4';
 
+chatClient.setUser(
+    {
+      id: 'gentle-mode-1',
+      name: 'Gentle mode',
+      image: 'https://getstream.io/random_svg/?id=gentle-mode-1&name=Gentle+mode'
+    },
+    userToken,
+);
 
+const channel = chatClient.channel('livestream', 'spacex', {
+  image: 'https://goo.gl/Zefkbx',
+  name: 'SpaceX launch discussion',
+});
 
-const chatClient = new StreamChat('zcb7grvq5fqj');
-const userToken =
-    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZGFyay13aW5kLTMifQ.CdtwgaJPvLkQ0e5xfydbXluiYGR5s_Jf3hLCHh4Zbzc';
+const App = () => (
+    <Chat client={chatClient} theme={'livestream dark'}>
+      <Channel channel={channel} Message={MessageLivestream}>
+        <Window hideOnThread>
+          <ChannelHeader live />
+          <MessageList />
+          <MessageInput Input={MessageInputSmall} focus />
+        </Window>
+        <Thread fullWidth />
+      </Channel>
+    </Chat>
+);
 
-const user = {
-  id: 'dark-wind-3',
-  name: 'Dark wind',
-  image:
-      'https://stepupandlive.files.wordpress.com/2014/09/3d-animated-frog-image.jpg',
-};
-
-chatClient.setUser(user, userToken);
-
-class ChannelScreen extends React.Component {
-  render() {
-    const channel = chatClient.channel("messaging", "dark-wind-3");
-    channel.watch();
-
-    return (
-        <SafeAreaView>
-          <Chat client={chatClient}>
-            <Channel channel={channel}>
-              <View style={{ display: "flex", height: "100%" }}>
-                <MessageList />
-                <MessageInput />
-              </View>
-            </Channel>
-          </Chat>
-        </SafeAreaView>
-    );
-  }
-}
-
-export default class App extends React.Component {
-  render() {
-    return <ChannelScreen />;
-  }
-}
+export default App;
