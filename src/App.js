@@ -20,7 +20,7 @@ chatClient.setUser(
 
 const channel = chatClient.channel('livestream', 'spacex', {
   image: 'https://goo.gl/Zefkbx',
-  name: 'SpaceX launch discussion',
+  name: 'OurGlass',
 });
 
 const App = () => (
