@@ -1,0 +1,484 @@
+#nav1content {
+  display: block;
+  text-align: center;
+  width: initial;
+  padding: 0.5rem;
+}
+
+#nav1icon {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  margin: 0px;
+}
+
+#profilePic {
+  width: 40px;
+  height: 40px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#nav1bar {
+  display: block;
+  text-align: center;
+  width: 4rem!important;
+  background-color: #292b3a!important;
+  background-image: none!important;
+}
+
+#convProfilePic {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#convSearchBarForm {
+  margin: 0px!important;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+#convSearchBarText {
+  margin-left: 10px!important;
+  border-radius: 2px;
+  background: #c8cad9!important;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#convSearchBarButton {
+  margin-right: 10px!important;
+  margin-bottom: 0px!important;
+  height: 38px;
+  margin-top: 0px!important;
+  margin-left: 0px!important;
+}
+
+#topNav {
+  text-align: left!important;
+  display: block;
+  margin: 0px!important;
+  padding-top: 12px;
+  background-color: #3c3d4b!important;
+  height: 70px;
+}
+
+#topNavProfilePic {
+  width: 30px;
+  height: 30px;
+  margin: 7px!important;
+  text-align: center;
+  border-radius: 10%!important;
+  padding: 0px!important;
+  border: 1px;
+}
+
+#topNavConversation {
+  font-size: 24px;
+  padding: 0px!important;
+  margin-left: 15px!important;
+  vertical-align: middle;
+  margin-right: 15px!important;
+}
+
+#topNavHeader {
+  align-items: center;
+  margin: 3px!important;
+  text-align: center;
+  color: #ffffff!important;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none!important;
+}
+
+#chatBox {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+#chat {
+  padding: 0px!important;
+  background-color: initial;
+  border: none!important;
+}
+
+#groupConvProfilePic {
+  width: 20px;
+  height: 20px;
+  border: none;
+  margin: 1px;
+  padding: 0px;
+}
+
+#groupConvRemoveButton {
+  margin-top: 0px!important;
+  padding: 0px!important;
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+  margin-bottom: 0px!important;
+  margin-left: 15px;
+  margin-right: 4px;
+}
+
+#groupConversationDropdownItem {
+  width: inherit;
+  text-align: left!important;
+}
+
+#groupConversationButtonIcon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#contactRemoveBlockButton {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #946767;
+}
+
+#contactButtonCell {
+  text-align: center;
+  width: 30%;
+}
+
+#groupConvDeleteButton {
+  width: initial;
+}
+
+.sent {
+  margin: 5px;
+}
+
+.sent.profile {
+  width: 60px;
+}
+
+.sent.content {
+  font-size: 20px;
+  margin: 0px!important;
+  border: 1px solid;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: #b1b4cb;
+  background-color: #333547;
+  border-color: #333547;
+}
+
+.sent.time {
+  font-size: 15px;
+  margin: 0!important;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #b1b4cb!important;
+}
+
+.received.profile {
+  width: 60px;
+}
+
+.received {
+  margin: 5px;
+}
+
+.received.content {
+  font-size: 20px;
+  margin: 0px!important;
+  border: 1px solid;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: #292b3a;
+  background-color: #c8cad9;
+  border-color: #c8cad9;
+}
+
+.received.time {
+  font-size: 15px;
+  margin: 0!important;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #b1b4cb;
+}
+
+.sent.username {
+  font-size: 15px;
+  margin: 0!important;
+  /*padding-left: 12px;*/
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  font-style: italic;
+  color: #b1b4cb;
+}
+
+.received.username {
+  font-size: 15px;
+  margin: 0!important;
+  /*padding-left: 12px;*/
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  font-style: italic;
+  color: #b1b4cb;
+}
+
+#groupProfileButton {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+#brandlogo {
+  width: 40px;
+}
+
+#navbar2 {
+  background-color: #333547!important;
+  background-image: none;
+}
+
+#brandHeader {
+  color: #c1999a!important;
+  font-size: 18px;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+.sidebar-dark .nav-item .nav-link.active, .sidebar-dark .nav-item .nav-link.active i, .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:active i, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:focus i, .sidebar-dark .nav-item .nav-link:hover, .sidebar-dark .nav-item .nav-link:hover i {
+  color: #c1999a;
+  background-color: rgba(0,0,0,10%);
+}
+
+.convSearchButton {
+  color: #fff;
+  background-color: #292b3a;
+  border-color: #292b3a;
+}
+
+.chatSendButton {
+  color: #fff;
+  background-color: #3f80aa;
+  border-color: #3f80aa;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+  color: #fff;
+  background-color: #5b5d6e;
+  border-color: #5b5d6e;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #292b3a;
+  background-color: #c1999a;
+  border-color: #c1999a;
+}
+
+#topNavDropdownMenu {
+  color: #c1999a!important;
+}
+
+.sidebar-dark .nav-item .nav-link {
+  color: #b1b4cb;
+}
+
+#footer {
+  background-color: #292b3a!important;
+  height: 77px;
+}
+
+#wrapper #content-wrapper {
+  background-color: #333547;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#chatbackground {
+  overflow-y: scroll;
+  background-color: #5b5d6e;
+  height: 374px;
+}
+
+#messageInput {
+  width: 600px;
+  margin-right: 10px;
+  border: 1px;
+  border-radius: 2px;
+  background-color: #c8cad9;
+  margin-top: 0px;
+  margin-top: 0px;
+}
+
+#messageInputRow {
+  height: 40px;
+}
+
+#messageForm {
+  margin: 0px!important;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#contactsBackground {
+  background-color: #333547;
+  overflow-y: scroll;
+  height: 483px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #c1999a;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #5b5d6e;
+  border-color: #5b5d6e;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #5b5d6e;
+}
+
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #5b5d6e;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #292b3a;
+  border-radius: .35rem;
+}
+
+#pagitation {
+  background-color: #123456;
+}
+
+body {
+  margin: 0;
+  font-family: Nunito,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #b1b4cb;
+  text-align: left;
+  background-color: #333547!important;
+}
+
+.text-primary {
+  color: #c8cad9!important;
+}
+
+#profilePagePic {
+  border: none;
+  width: 130px;
+  height: 130px;
+}
+
+#settingInput {
+  background-color: #b1b4cb;
+  color: #292b3a;
+  border-color: #292b3a;
+  border: 1px;
+}
+
+#cardHeader {
+  background-color: #333547;
+  border-color: #333547;
+}
+
+#cardContentBackground {
+  background-color: #3c3d4b;
+  border-color: #3c3d4b;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: .85rem;
+  color: #c8cad9;
+  text-align: left;
+  list-style: none;
+  background-color: #292b3a;
+  background-clip: padding-box;
+  border: 1px solid #292b3a;
+  border-radius: .35rem;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #c8cad9;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #333547;
+  text-decoration: none;
+  background-color: #c1999a;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem #3f80aa;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 .2rem #3f80aa;
+}
+
+.borderSetting {
+  border: 1px!important;
+  border-radius: 10%!important;
+  border-color: #292b3a!important;
+}
+
+#contactAddButton {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #679475;
+}
+
