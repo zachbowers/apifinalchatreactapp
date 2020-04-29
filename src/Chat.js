@@ -23,8 +23,8 @@ const channel = chatClient.channel('livestream', 'webapi', {
   name: 'OurGlass',
 });
 
-const App = () => (
-    <Chat client={chatClient} theme={'livestream dark'}>
+const Chat = () => (
+    <Chat client={chatClient} theme={'livestream light'}>
       <Channel channel={channel} Message={MessageLivestream}>
         <Window hideOnThread>
           <ChannelHeader live />
@@ -36,4 +36,4 @@ const App = () => (
     </Chat>
 );
 
-export default App;
+export default Chat;
