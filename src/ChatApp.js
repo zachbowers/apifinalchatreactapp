@@ -11,7 +11,7 @@ const userToken = 'myusertoken';
 
 chatClient.setUser(
     {
-      id: '',
+      id: 'Gentle-mode-1',
       name: '',
       image: 'https://getstream.io/random_svg/?id=gentle-mode-1&name=Gentle+mode'
     },
