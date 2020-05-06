@@ -8,7 +8,7 @@ import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ChatApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
