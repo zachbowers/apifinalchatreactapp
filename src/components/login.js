@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { submitLogin } from '../actions/authActions';
 import { connect } from 'react-redux';
-import { Col, Form, FormGroup, FormControl, FormLabel, Button, Label } from 'react-bootstrap';
+import { Col, Form, FormGroup, FormControl, ControlLabel, Button, Label } from 'react-bootstrap';
 
 class Login extends Component {
 
@@ -41,7 +41,7 @@ class Login extends Component {
                         <FormControl onChange={this.updateDetails} value={this.state.details.username} type="username" name="username" placeholder="Username" />
                     </FormGroup>
                     <FormGroup controlId="password">
-                        <FormLabel for="password">Password</FormLabel>
+                        <Label for="password">Password</Label>
                         <FormControl onChange={this.updateDetails} value={this.state.details.password} type="password" name="password" placeholder="Password" />
                     </FormGroup>
                     <Button type="submit">Sign in</Button>
