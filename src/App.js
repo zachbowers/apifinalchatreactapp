@@ -5,7 +5,7 @@ import Auth from './components/auth.js';
 import { HashRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './stores/stores.js';
-import AppBar from '@matertial-ui/core/AppBar';
+import AppBar from '@material-ui/core/AppBar';
 function App() {
     return (
         <div className="siteNav">
