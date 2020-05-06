@@ -34,7 +34,12 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="center">
+
+
+
+            <div class="login-dark">
+                <h2 class="sr-only">Login Form</h2>
+                <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
                 <Form onSubmit={this.login} horizontal>
                     <FormGroup controlId="username">
                         <Label for="username">Username</Label>
@@ -46,6 +51,7 @@ class Login extends Component {
                     </FormGroup>
                     <Button type="submit">Sign in</Button>
                 </Form>
+
             </div>
         )
     }
