@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import ChatApp from './ChatApp';
+import ChatApp from './ChatApp';
 import * as serviceWorker from './serviceWorker';
 import App from './App'
 
-
 ReactDOM.render(
-    <App />,
-  document.getElementById('root')
+    <App>
+        <ChatApp />
+    </App>,
+    document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
