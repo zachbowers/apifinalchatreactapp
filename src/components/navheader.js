@@ -14,7 +14,7 @@ class NavHeader extends Component {
     render() {
         return (
             <div id="wrapper">
-                <nav className="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" id="nav1bar">
+                <Nav className="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" id="nav1bar">
                     <div className="container-fluid d-flex flex-column p-0">
                         <div className="text-center d-none d-md-inline"></div>
                         <ul className="nav navbar-nav text-light" id="accordionSidebar">
@@ -25,8 +25,8 @@ class NavHeader extends Component {
                             </li>
                         </ul>
                     </div>
-                </nav>
-                <nav className="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" id="navbar2">
+                </Nav>
+                <Nav className="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" id="navbar2">
                     <div className="container-fluid d-flex flex-column p-0">
                         <a className="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" id="brandHeader">
                             <LinkContainer to="../">
@@ -37,7 +37,7 @@ class NavHeader extends Component {
                         <ul className="nav navbar-nav text-light" id="accordionSidebar"> </ul>
                     </div>
 
-                </nav>
+                </Nav>
             </div>
 
 
