@@ -1,7 +1,7 @@
 import React from "react";
 import chatApp from './components/ChatApp.js';
 import Auth from './components/auth.js';
-import './App.css';
+//import './App.css';
 import { HashRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './stores/stores.js';
